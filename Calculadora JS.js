@@ -1,4 +1,4 @@
-function somas(valorA, valorB, op){
+function calculadora(valorA, valorB, op){
 if (op === '-'){
 return valorA - valorB;}
 else if (op === '/'){
