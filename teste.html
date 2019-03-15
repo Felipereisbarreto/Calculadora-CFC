@@ -22,8 +22,12 @@ table, th, td{
 	<th>
   1ºNumero: <input type="text" name="fname" value = ""><br>
 </th>
+
 <th>
-  Operador:<select name="operacao"> 
+  2ºNumero: <input type="text" name="lname" value = ""><br>
+  </th>
+  <th>
+  Operador:<select onchange="numeros()" name="operacao"> 
   <option value="+">Adição</option>
   <option value="-">Subtração</option>
   <option value="/">Divisão</option>
@@ -34,16 +38,7 @@ table, th, td{
   
   <br>
 </th>
-<th>
-  2ºNumero: <input type="text" name="lname" value = ""><br>
-  </th>
-  <higth>
-  	<th>
-  <input type="button" value ="Somar" name ="ty" onclick="numeros()"> <br>
-  
-</th>
-  </higth>
-  <th>
+ <th>
     Resultado: <input type="text" name="result" value = "" readonly><br>
 </th></tr>
 
