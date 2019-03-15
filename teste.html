@@ -8,20 +8,47 @@
 
 
 <body>
+<table>
+<style>
+table, th, td{
 
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 55px;
+}
+</style>
+<tr>
 <form name="calculadora">
+	<th>
   1ºNumero: <input type="text" name="fname" value = ""><br>
-  |Operador: <input type="text" name="operacao" value = ""><br>
-  2ºNumero: <input type="text" name="lname" value = ""><br>
+</th>
+<th>
+  Operador: 
+  <input type="text" name="operacao" value = "">
   
+  
+  <br>
+</th>
+<th>
+  2ºNumero: <input type="text" name="lname" value = ""><br>
+  </th>
   <higth>
-  <input type="button" value ="somar" name ="go" onclick="numeros()"> <br>
+  	<th>
+  <input type="button" value ="Somar" name ="ty" onclick="numeros()"> <br>
+  
+</th>
   </higth>
+  <th>
     Resultado: <input type="text" name="result" value = "" readonly><br>
+</th></tr>
 
 
 
-</table>
+
+
+
+
 </form>
+</table>
 </body>
 </html>
