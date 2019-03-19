@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
 <script type="text/javascript" src="CalculadoraJS.js"></script>
-
 </head>
-
-
 <body>
 <table>
 <style>
 table, th, td{
-
 	border: 1px solid black;
 	border-collapse: collapse;
 	padding: 55px;
@@ -22,7 +17,6 @@ table, th, td{
 	<th>
   1ºNumero: <input type="text" name="fname" value = ""><br>
 </th>
-
 <th>
   2ºNumero: <input type="text" name="lname" value = ""><br>
   </th>
@@ -32,23 +26,30 @@ table, th, td{
   <option value="-">Subtração</option>
   <option value="/">Divisão</option>
   <option value="raiz">Raiz Quadrada</option>
+  <option value="*">Multiplicação</option>
+  <option value="%">Porcentagem</option>
 </select>
-  
-  
-  
-  <br>
+ <br>
 </th>
- <th>
-    Resultado: <input type="text" name="result" value = "" readonly><br>
+<th>
+   Resultado: <input type="text" name="result" value = "" readonly><br>
 </th></tr>
-
-
-
-
-
-
-
-</form>
 </table>
+<script>
+function historico(texto){
+listahistorico.push(texto);
+document.calculadora.resul2.value = listahistorico;
+	var tbody = document.createElement('tbody');
+	let tr = document.createElement('tr');
+    let td = document.createElement('td');
+    let input = document.createElement('input');
+input.value = listahistorico[listahistorico.length - 1];
+td.appendChild(input);
+tr.appendChild(input);
+	document.body.appendChild(tr);}
+</script>
+Historico:<input type="text" name="resul2" value = "" readonly>
+</form>
+
 </body>
 </html>
